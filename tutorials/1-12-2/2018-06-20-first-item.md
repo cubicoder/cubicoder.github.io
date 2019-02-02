@@ -75,7 +75,7 @@ Registration has changed in 1.12.2 from older versions of Minecraft Forge. Inste
 
 The unlocalized name, like "pickaxeDiamond", is used in language files and will translate into the name that appears onscreen, such as "Diamond Pickaxe" for English. **The unlocalised name and the registry name of an item should always be the same for mods, even though vanilla doesn't do it this way.** We will be covering language files in a later tutorial.
 
-The registry name is the name under which the item is registered into the Forge Registry. This is the name that would appear in a `/give` command, such as `/give @s minecraft:diamond_pickaxe`. For more information on the Forge Registry, read the official documentation on it at ![https://mcforge.readthedocs.io/en/latest/concepts/registries/](https://mcforge.readthedocs.io/en/latest/concepts/registries/).
+The registry name is the name under which the item is registered into the Forge Registry. This is the name that would appear in a `/give` command, such as `/give @s minecraft:diamond_pickaxe`. For more information on the Forge Registry, read the official documentation on it at [https://mcforge.readthedocs.io/en/latest/concepts/registries/](https://mcforge.readthedocs.io/en/latest/concepts/registries/).
 
 The mod id is added to the unlocalized name to protect against namespace collisions. For example, two different mods might both add a copper ingot and set its unlocalized name to `copper_ingot`. Without adding the mod id, the different items appear to be one. The `setRegistryName()` method adds our mod id automatically, so we don’t have to.
 
