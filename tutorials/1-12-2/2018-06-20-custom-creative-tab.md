@@ -45,3 +45,4 @@ Change the `setCreativeTab()` method in your `ItemFirstItem` and `BlockFirstBloc
 setCreativeTab(TutorialMod.TUTORIAL_TAB);
 ```
 That’s all you have to do to have your own creative tab!
+![tab0](/img/7tab/tab0.png)
