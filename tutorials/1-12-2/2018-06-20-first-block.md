@@ -133,4 +133,4 @@ Block Model JSON (also named `first_block.json`):
 }
 ```
 Finally, put your texture in the `assets/tutorialmod/textures/blocks` folder. Run the game to see your custom block!
-![item0](/img/4item/item0.png)
+![block0](/img/5block/block0.png)
