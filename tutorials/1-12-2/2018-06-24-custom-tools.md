@@ -44,9 +44,9 @@ public class ItemTutorialAxe extends ItemAxe {
 
 }
 ```
-Now create a class named `TutorialMaterials` in the package `com.cubicoder.tutorial.materials`. In this class, we use Forge’s `EnumHelper` to create a new tool material.
+Now create a class named `TutorialMaterials` in the package `com.cubicoder.tutorial.material`. In this class, we use Forge’s `EnumHelper` to create a new tool material.
 ```java
-package com.cubicoder.tutorial.materials;
+package com.cubicoder.tutorial.material;
 
 import com.cubicoder.tutorial.TutorialMod;
 
