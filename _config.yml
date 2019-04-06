@@ -150,7 +150,7 @@ timezone: "America/Indiana/Indianapolis"
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-paginate: 
+paginate: 5
 
 kramdown:
   input: GFM
