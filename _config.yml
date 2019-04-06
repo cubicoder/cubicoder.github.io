@@ -140,10 +140,8 @@ excerpt_length: 50
 # and RSS feed title
 title-separator: "-"
 
-# Paginate on seperate page
-gems: [jekyll-paginate]
-paginate: 
-paginate-path: "blog/page:num/"
+# Blog posts on seperate page
+paginate_path: "/blog/page:num/"
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
