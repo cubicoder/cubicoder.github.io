@@ -25,6 +25,7 @@ description: Modding tutorials for Minecraft Forge
 navbar-links:
   Tutorials:
     - 1.12.2: "https://cubicoder.github.io/tutorials/1-12-2/tutorials/"
+  Blog: "https://cubicoder.github.io/blog/"
   GitHub: "https://github.com/cubicoder/tutorialmod"
 
 # Image to show in the navigation bar - image must be a square (width = height)
