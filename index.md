@@ -29,7 +29,7 @@ There are myriads of Java tutorials online with varying difficulty levels, which
 
 ### Other Modding Sources
 
-There are loads of other sources out there to learn about modding Minecraft. I've discussed a few of the better ones in [one of my blog posts]().
+There are loads of other sources out there to learn about modding Minecraft. I've discussed a few of the better ones in [one of my blog posts](https://cubicoder.github.io/other-modding-resources/).
 
 However, it's important to know that many resources out there spread misinformation and bad practices. No website (including this one!) is perfect. At the end of the day, the only truly accurate source for information about Forge is their own [official documentation](https://mcforge.readthedocs.io/en/latest/).
 
