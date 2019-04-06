@@ -140,6 +140,11 @@ excerpt_length: 50
 # and RSS feed title
 title-separator: "-"
 
+# Paginate on seperate page
+gems: [jekyll-paginate]
+paginate: 
+paginate-path: "blog/page:num/"
+
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
@@ -148,7 +153,6 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 paginate: 
-paginate-path: "blog/page:num/"
 
 kramdown:
   input: GFM
