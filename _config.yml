@@ -184,10 +184,16 @@ defaults:
       path: "" # all files
     values:
       layout: "page"
-      comments: true
-      social-share: true
       show-avatar: true
 
+  -
+    scope:
+      path: "/tutorials/"
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+      
 # Use tags index page and make tags on each post clickable
 link-tags: true
 

@@ -7,7 +7,7 @@ social-share: false
 
 ## Setup
 
-[**Setting Up the Development Environment**](/tutorials/1-12-2/2018-11-25-setting-up-the-development-environment/) - _November 25, 2018_
+[**Setting Up the Development Environment**](/tutorials/1-12-2/2018-06-19-setting-up-the-development-environment/) - _June 19, 2018_
 
 ## Basics
 
