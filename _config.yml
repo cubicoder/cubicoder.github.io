@@ -188,7 +188,7 @@ defaults:
 
   -
     scope:
-      path: "/tutorials/"
+      path: "tutorials/*" # default for all tutorials
     values:
       layout: "post"
       comments: true
