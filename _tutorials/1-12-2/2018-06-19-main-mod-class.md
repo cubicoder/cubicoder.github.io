@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Main Mod Class
-date: 2018-06-19
 ---
 
 In this tutorial, we’ll be setting up the main mod class, the class that Forge loads your mod from. First, create a new package in src/main/java. This can be called anything you want, as long as it follows Java package naming conventions. I’ll be calling mine `com.cubicoder.tutorial`.

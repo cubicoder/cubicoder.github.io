@@ -1,6 +1,8 @@
 ---
 layout: page
 title: 1.12.2 Tutorials
+comments: false
+social-share: false
 ---
 
 ## Setup
