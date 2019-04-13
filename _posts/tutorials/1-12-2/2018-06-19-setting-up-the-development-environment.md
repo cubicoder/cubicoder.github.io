@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Setting Up the Development Environment
-date: 2018-11-25
+date: 2018-06-19
 ---
 
 The first thing you'll need to get started is the latest JDK 8 (Java Development Kit 8). Download it from [Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
