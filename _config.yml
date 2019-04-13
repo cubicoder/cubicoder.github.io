@@ -171,13 +171,13 @@ defaults:
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
-	  path: ""
-	  type: "tutorials"
-	values:
-	  layout: "post"
-	  comments: true
-	  social-share: true
-	  output: true
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "post"
+      comments: true
+      social-share: true
+      output: true
   -
     scope:
       path: "" # all files
