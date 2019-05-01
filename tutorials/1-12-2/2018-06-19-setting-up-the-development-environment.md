@@ -14,15 +14,15 @@ After the JDK finishes installing, you'll need to set the `Path` and `JAVA_HOME`
 
 ![System Info, Windows 10](/img/1setup/setup1.png)
 
-Click that, and in the window that pops up, click on advanced system settings.
+Click that, and in the window that pops up, click on Advanced system settings.
 
 ![Advanced System Settings](/img/1setup/setup2.png)
 
-Click the Environment Variables... button. In system variables, edit the `Path` variable or create it if you don't have it. Add the path to the bin folder of the JDK you just installed. This should look something like this: `C:\Program Files\Java\jdk1.8.0_191\bin`. ***DO NOT DELETE ANY OTHER VALUES IN THIS VARIABLE. Doing so could permanantly mess up your computer!*** Next, click OK. Now, create the `JAVA_HOME` system variable. The path that goes into this one should be exactly the same as the last one, except for the lack of \bin. It should look something like this: `C:\Program Files\Java\jdk1.8.0_191`. After you create it, click OK in all the boxes. Congrats! Java is completely set up!
+Click the Environment Variables... button. In System Variables, edit the `Path` variable or create it if you don't have it. Add the path to the bin folder of the JDK you just installed. This should look something like this: `C:\Program Files\Java\jdk1.8.0_191\bin`. ***DO NOT DELETE ANY OTHER VALUES IN THIS VARIABLE. Doing so could permanently mess up your computer!*** Next, click OK. Now, create the `JAVA_HOME` system variable. The path that goes into this one should be exactly the same as the last one, except for the lack of \bin. It should look something like this: `C:\Program Files\Java\jdk1.8.0_191`. After you create it, click OK in all the boxes. Congrats! Java is completely set up!
 
 ![Environment Variables](/img/1setup/setup3.png)
 
-The next step is to download an IDE (Integrated Development Environment) of your choice. [Eclipse](http://www.eclipse.org/) will be used in these tutorials. Eclipse is the IDE we will be using for these tutorials. You can also use IntelliJ IDEA, but we will only be covering Eclipse. You can use their installer, or you can download a package (my preferred method). You can get the IDE for Java or for Java EE.
+The next step is to download an IDE (Integrated Development Environment) of your choice. [Eclipse](http://www.eclipse.org/) will be used in these tutorials. Eclipse is the IDE we will be using for these tutorials. You can also use IntelliJ IDEA, but we will only be covering Eclipse. You can use their installer, or you can download a package (my preferred method). You can get the IDE for Java or for Java EE; either one works just fine.
 
 ![eclipse.org](/img/1setup/setup4.png)
 
@@ -32,8 +32,7 @@ To install a package, simply [download the zip](http://www.eclipse.org/downloads
 
 Download the latest [Minecraft Forge](http://files.minecraftforge.net/) MDK (Mod Development/Developer Kit) (**NOT the installer!**). Extract the zip to any directory. You'll need to edit two files in here before you can continue; one will update the version of Gradle and the other will update the MCP (Mod Coder Pack) mappings used for the source code of Minecraft.
 
-**THIS STEP WAS ADDED AFTER THE TUTORIAL WAS CREATED, AND CAN BREAK A NUMBER OF THINGS FOR INEXPERIENCED MODDERS. IT IS NOT RECCOMENDED**
-First, go to <MDK_dir>/gradle/wrapper, where <MDK_dir> is where you installed the MDK. In this folder you will find a file named gradle-wrapper.properties. Open this and change where it says "gradle-2.14-bin.zip" to "gradle-4.9-bin.zip" (under distributionUrl). Then go to the build.gradle file in your root MDK directory. Find where it says mappings="snapshot_XXXXXXXX", in the minecraft {} block of code. Change "snapshot_XXXXXXXX" to "stable_39". This is the latest and final version of mappings for 1.12.2.
+First, go to <MDK_dir>/gradle/wrapper, where <MDK_dir> is where you installed the MDK. In this folder you will find a file named gradle-wrapper.properties. Open this and change where it says "gradle-2.14-bin.zip" to "gradle-4.9-bin.zip" (under distributionUrl). Then go to the build.gradle file in your root MDK directory. Find where it says mappings="snapshot_XXXXXXXX", in the minecraft {} block of code. Change "snapshot_XXXXXXXX" to "stable_39". This is the latest and final version of mappings for 1.12.2. These steps are technically optional, but it is good practice to keep up-to-date with mappings, and using a newer version of Gradle will help speed up the build process and setup commands.
 
 ![Updating Gradle](/img/1setup/setup12.png)
 
