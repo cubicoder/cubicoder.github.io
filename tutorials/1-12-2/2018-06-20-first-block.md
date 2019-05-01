@@ -68,34 +68,26 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 public final class EventSubscriber {
 
 	@SubscribeEvent
-	public static void registerBlocks(Register event) {
-		
+	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
 				new BlockFirstBlock().setRegistryName("first_block").setUnlocalisedName(TutorialMod.MODID + "." + "first_block"),
 		};
 
 		event.getRegistry().registerAll(blocks);
-
 	}
 
 	@SubscribeEvent
-	public static void registerItems(Register event) {
-
+	public static void registerItems(Register<Item> event) {
 		final Item[] items = {
-
 				new ItemFirstItem().setRegistryName("first_item").setUnlocalisedName(TutorialMod.MODID + "." + "first_item"),
-
 		};
 
 		final Item[] itemBlocks = {
-                
                 new ItemBlock(ModBlocks.FIRST_BLOCK).setRegistryName(ModBlocks.FIRST_BLOCK.getRegistryName()),
-
         };
 
 		event.getRegistry().registerAll(items);
 		event.getRegistry().registerAll(itemBlocks);
-
 	}
 
 }

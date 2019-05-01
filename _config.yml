@@ -143,12 +143,6 @@ title-separator: "-"
 # Blog posts on seperate page
 paginate_path: "/blog/page:num/"
 
-# Collection for tutorials (failed)
-#collections:
-#  tutorials:
-#    output: true
-#    permalink: /tutorials/
-
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
@@ -171,14 +165,7 @@ defaults:
       layout: "post"
       comments: true  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
-#  -
-#    scope:
-#      path: ""
-#      type: "tutorials"
-#    values:
-#      layout: "post"
-#      comments: true
-#      social-share: true
+
   -
     scope:
       path: "" # all files

@@ -16,9 +16,7 @@ import net.minecraft.item.Item;
 public class ItemFirstItem extends Item {
 
 	public ItemFirstItem() {
-
 		setCreativeTab(CreativeTabs.MISC);
-
 	}
 
 }
@@ -58,15 +56,11 @@ public final class EventSubscriber {
 
 	@SubscribeEvent
 	public static void registerItems(Register<Item> event) {
-
 		final Item[] items = {
-
 				new ItemFirstItem().setRegistryName("first_item").setUnlocalisedName(TutorialMod.MODID + "." + "first_item"),
-
 		};
 
 		event.getRegistry().registerAll(items);
-
 	}
 
 }
@@ -98,15 +92,11 @@ public final class ClientEventSubscriber {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
-
         registerModel(ModItems.FIRST_ITEM);
-
     }
 
     private static void registerModel(Item item) {
-
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-
     }
 
 }

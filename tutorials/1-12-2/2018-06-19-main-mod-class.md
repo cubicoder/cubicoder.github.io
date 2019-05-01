@@ -30,6 +30,7 @@ public class TutorialMod {
 
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+        
 	}
 
 	@EventHandler
@@ -39,7 +40,7 @@ public class TutorialMod {
 
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
-
+        
 	}
 
 }
