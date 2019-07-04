@@ -13,8 +13,6 @@ social-share: false
 
 [**Main Mod Class**](/tutorials/1-12-2/2018-06-19-main-mod-class) – _June 19, 2018_
 
-[**Proxies**](/tutorials/1-12-2/2018-06-19-proxies) – _June 19, 2018_
-
 [**First Item**](/tutorials/1-12-2/2018-06-20-first-item) – _June 20, 2018_
 
 [**First Block**](/tutorials/1-12-2/2018-06-20-first-block) – _June 20, 2018_
@@ -32,6 +30,10 @@ social-share: false
 [**Furnace Recipes**](/tutorials/1-12-2/2018-06-29-furnace-recipes) – _June 29, 2018_
 
 [**Ore Generation**](/tutorials/1-12-2/2018-07-17-ore-generation) – _July 17, 2018_
+
+## Concepts
+
+**Sides** – _in progress_
 
 ## Miscellaneous
 
