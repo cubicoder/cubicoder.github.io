@@ -123,17 +123,17 @@ Models in Minecraft are done using JSON files. Create an untitled text file in `
 ```
 The `parent` line tells what model this model should be based off of. For this example, this model will inherit all of the features of the `item/generated` model that Minecraft provides. The `textures` block tells Forge where it should look for the texture.
 
-Your item’s texture, called `first_item.png`, goes in the `assets/tutorialmod/textures/items` folder.
+Your item’s texture, called `first_item.png`, goes in the `assets/tutorialmod/textures/items` folder. This should be a square texture, with dimensions of powers of two (8x, 16x, 32x, 64x, 128x, etc.). I recommend sticking with Minecraft's default of 16x16 ([here's why](https://latmod.com/moddingtutorials/non-16x-textures/)).
 
 Run the game to see your custom item in the Miscellaneous creative tab!
 ![item0](/img/4item/item0.png)
 
 **Important Links for Items**
 
-https://mcforge.readthedocs.io/en/latest/items/items/
+[Items](https://mcforge.readthedocs.io/en/latest/items/items/)
 
-https://mcforge.readthedocs.io/en/latest/concepts/registries/
+[Registries](https://mcforge.readthedocs.io/en/latest/concepts/registries/)
 
-https://mcforge.readthedocs.io/en/latest/concepts/sides/
+[Sides](https://mcforge.readthedocs.io/en/latest/concepts/sides/)
 
-https://mcforge.readthedocs.io/en/latest/models/using/#item-models
+[Item Models](https://mcforge.readthedocs.io/en/latest/models/using/#item-models)
