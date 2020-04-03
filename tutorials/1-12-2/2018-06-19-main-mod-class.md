@@ -35,7 +35,7 @@ public class TutorialMod {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		LOGGER.info(TutorialMod.NAME + "says hi!");
+		LOGGER.info(TutorialMod.NAME + " says hi!");
 	}
 
 	@EventHandler

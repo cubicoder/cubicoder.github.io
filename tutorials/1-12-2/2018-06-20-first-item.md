@@ -6,9 +6,8 @@ date: 2018-06-20
 
 Now that all of our basic setup is done, we get to move on to the fun stuff: adding content into the game. We’ll start with a very basic item.
 
-Begin by creating two new packages under `cubicoder.tutorialmod`: `item` and `init`. The `item` package is not strictly necessary yet, but it will hold custom items in the future, should you make any.
+Begin by creating a new package: `cubicoder.tutorialmod.init`. Next, create a class named `ModItems` in the `cubicoder.tutorialmod.init` package. This class stores references to all of our items in case we need to access them in the code. By using the `@ObjectHolder` annotation, we can have Forge automatically inject our items into the class by pulling them out of the registry.
 
-Create a class named `ModItems` in the `cubicoder.tutorialmod.init` package. This class stores references to all of our items in case we need to access them in the code. By using the `@ObjectHolder` annotation, we can have Forge automatically inject our items into the class by pulling them out of the registry.
 ```java
 package cubicoder.tutorialmod.init;
 
@@ -25,36 +24,29 @@ public class ModItems {
 ```
 The mod id in the `@ObjectHolder` parameter simply tells Forge to inject matching items from our mod; putting `"minecraft"` would make it look for items from vanilla Minecraft. If we don’t specify an `@ObjectHolder` annotation above the field declaration, it will take the name of the field, set it to lowercase, and use that as the registry name to be injecting from. So, in this case, we need to make sure the name of the field is `FIRST_ITEM`, since the mod id is automatically added. If you're curious or confused, read more on `@ObjectHolder` [here](https://mcforge.readthedocs.io/en/latest/concepts/registries/#injecting-registry-values-into-fields).
 
-Next, we need to actually register our items. Create an inner class in `ModItems` called `RegistryHandler`.
+Next, we need to actually register our items. Create a class in `cubicoder.tutorialmod` called `RegistrationHandler`.
 ```java
-package cubicoder.tutorialmod.init;
+package cubicoder.tutorialmod;
 
-import cubicoder.tutorialmod.TutorialMod;
+import cubicoder.tutorialmod.util.RegistryUtil;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 
-@ObjectHolder(TutorialMod.MODID)
-public class ModItems {
+@EventBusSubscriber(modid = TutorialMod.MODID)
+public class RegistrationHandler {
 
-	public static final Item FIRST_ITEM = null;
+	@SubscribeEvent
+	public static void registerItems(Register<Item> event) {
+		final Item[] items = {
+				new Item().setRegistryName(TutorialMod.MODID, "first_item").setTranslationKey(TutorialMod.MODID + "." + "first_item").setCreativeTab(CreativeTabs.MISC)
+		};
 
-	@EventBusSubscriber(modid = TutorialMod.MODID)
-	public static class RegistrationHandler {
-		
-		@SubscribeEvent
-		public static void registerItems(Register<Item> event) {
-			final Item[] items = {
-					new Item().setRegistryName(TutorialMod.MODID, "first_item").setTranslationKey(TutorialMod.MODID + "." + "first_item").setCreativeTab(CreativeTabs.MISC)
-			};
-
-			event.getRegistry().registerAll(items);
-		}
-		
+		event.getRegistry().registerAll(items);
 	}
-	
+
 }
 ```
 Registration has changed in 1.12.2 from older versions of Minecraft Forge. Instead of calling `GameRegistry.register()`, there is now an event for each kind of registry. We subscribe to the event bus using `@EventBusSubscriber`, then provide a method for each event using `@SubscribeEvent`. In this method, we initialize our item while adding it to an array of items. Then, we use the `event.getRegistry().registerAll()` method to register every item in our item array. We also add the item to the Miscellaneous creative tab for easy access. Later, we'll learn how to add our own creative tab.
@@ -110,7 +102,7 @@ public class ModelRegistrationHandler {
 ```
 This subscribes to the `ModelRegistryEvent` and tells the Forge model loader to look for the item model in a certain directory. Note that the `value = Side.CLIENT` parameter in the `@EventBusSubscriber` annotation ensures that this only happens on the client side. This is because only the client side needs to know about model information. The Forge official documentation has a great resource about [the difference between client and server in modding](https://mcforge.readthedocs.io/en/latest/concepts/sides/).
 
-In our case, the model directory will be `assets/tutorialmod/models/item`. This folder goes in the `src/main/resources` folder. Also, in the same place, create the `assets/tutorialmod/textures/items` folder. This is where all our item textures will be stored.
+In our case, the model directory will be `assets/tutorialmod/models/item`. This folder goes in the `src/main/resources` folder. Also, in the same place, create the `assets/tutorialmod/textures/items` folder. This is where all our item textures will be stored. **Note the spelling of these directories: `models/item` with no `s` after `item`, and `textures/items` with an `s`.**
 
 Models in Minecraft are done using JSON files. Create an untitled text file in `assets/tutorialmod/models/item` and name it `first_item.json`.
 ```JSON
