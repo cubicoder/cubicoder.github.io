@@ -12,3 +12,5 @@ Further, I encourage all of you reading this to move to 1.14.4/1.15.2. The Forge
 
 Not much else here to say, so, without further ado, happy modding!
 
+P.S. The [GitHub](https://github.com/cubicoder/tutorialmod) with all the tutorial code is also updated now, so that's cool
+
