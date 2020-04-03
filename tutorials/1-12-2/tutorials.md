@@ -31,10 +31,6 @@ social-share: false
 
 [**Ore Generation**](/tutorials/1-12-2/2018-07-17-ore-generation) – _July 17, 2018_
 
-## Concepts
-
-**Sides** – _in progress_
-
 ## Miscellaneous
 
 [**Exporting Your Mod**](/tutorials/1-12-2/2018-07-09-exporting-your-mod) – _July 9, 2018_
