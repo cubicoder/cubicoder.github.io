@@ -83,7 +83,7 @@ public class ModItems {
 }
 ```
 
-`RegistrationHandler.java`
+`RegistrationHandler.java`:
 
 ```java
 //...
@@ -105,7 +105,7 @@ public static void registerItems(Register<Item> event) {
 //...
 ```
 
-`ModelRegistrationHandler.java`
+`ModelRegistrationHandler.java`:
 
 ```java
 //...
