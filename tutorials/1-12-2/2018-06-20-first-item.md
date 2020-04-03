@@ -122,10 +122,7 @@ Run the game to see your custom item in the Miscellaneous creative tab!
 
 **Important Links for Items**
 
-[Items](https://mcforge.readthedocs.io/en/latest/items/items/)
-
-[Registries](https://mcforge.readthedocs.io/en/latest/concepts/registries/)
-
-[Sides](https://mcforge.readthedocs.io/en/latest/concepts/sides/)
-
+[Items](https://mcforge.readthedocs.io/en/latest/items/items/)  
+[Registries](https://mcforge.readthedocs.io/en/latest/concepts/registries/)  
+[Sides](https://mcforge.readthedocs.io/en/latest/concepts/sides/)  
 [Item Models](https://mcforge.readthedocs.io/en/latest/models/using/#item-models)
