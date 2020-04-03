@@ -50,11 +50,16 @@ public class TutorialMaterials {
 ```
 Forge's `EnumHelper` uses a Java feature called reflection to add values to the vanilla `ToolMaterial` enum after it has already been created. Reflection is a complicated and advanced topic, so it's good for us that Forge supplies the `EnumHelper` to do the heavy lifting. All we need to do is fill in a few parameters.
 
-`Name`: The name of the enum value that Forge will be adding. ***Make sure to prefix this with your mod id!***.
-`Harvest level`: The harvest level determines which blocks your tools can harvest. 0 is wood and gold level, 1 is stone, 2 is iron, and 3 is diamond. You can set this level higher than three, and if you or another mod adds a block with a higher harvest level than three, you’ll be able to mine it with your tools. As long as your tools’ harvest level is greater than or equal to the harvest level of the block you’re mining, it can be harvested.
-`Max uses`: The durability of your tools.
-`Efficiency`: How fast your tools mine/dig/whatever (not attack speed, though).
-`Damage`: The base amount of damage your tools deal. Different tool types increment this value certain amounts; for example, a sword will have a damage value three points higher than the value you set here.
+`Name`: The name of the enum value that Forge will be adding. ***Make sure to prefix this with your mod id!***.  
+
+`Harvest level`: The harvest level determines which blocks your tools can harvest. 0 is wood and gold level, 1 is stone, 2 is iron, and 3 is diamond. You can set this level higher than three, and if you or another mod adds a block with a higher harvest level than three, you’ll be able to mine it with your tools. As long as your tools’ harvest level is greater than or equal to the harvest level of the block you’re mining, it can be harvested.  
+
+`Max uses`: The durability of your tools.  
+
+`Efficiency`: How fast your tools mine/dig/whatever (not attack speed, though).  
+
+`Damage`: The base amount of damage your tools deal. Different tool types increment this value certain amounts; for example, a sword will have a damage value three points higher than the value you set here.  
+
 `Enchantability`: How well your item can be enchanted. A higher value here means a better chance of getting good enchantments.
 
 Let’s fill in these values so that our material is somewhere between iron and diamond.
