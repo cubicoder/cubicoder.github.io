@@ -71,7 +71,7 @@ final Item[] items = {
 
 We could run the game now and have a working item, but it would have the ugly default pink-and-black checkboard texture. Instead, we will add a model to the item.
 
-Create a new class called `ModelRegistrationHandler` in the `cubicoder.tutorial.client` package.
+Create a new class called `ModelRegistrationHandler` in the `cubicoder.tutorialmod.client` package.
 ```java
 package cubicoder.tutorialmod.client;
 

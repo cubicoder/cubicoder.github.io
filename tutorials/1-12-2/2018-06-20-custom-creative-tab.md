@@ -4,7 +4,7 @@ title: Custom Creative Tab
 date: 2018-06-20
 ---
 
-We can add our own creative tab for our mod’s items and blocks to go in. Start by making a new class in `cubicoder.tutorial` called `TutorialModTab`.
+We can add our own creative tab for our mod’s items and blocks to go in. Start by making a new class in `cubicoder.tutorialmod` called `TutorialModTab`.
 ```java
 package cubicoder.tutorialmod;
 

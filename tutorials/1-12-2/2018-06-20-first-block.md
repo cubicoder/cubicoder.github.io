@@ -6,7 +6,7 @@ date: 2018-06-20
 
 Now that we’ve added a basic item, let’s add a basic block. The process for this is very similar to adding an item. The only difference is that we actually have to add a block and an item. This is because a block in Minecraft exists in two places: in the world, as a `Block`, and in the inventory as an `ItemBlock`, which is an item that corresponds to a `Block`. Let’s get started! 
 
-Begin by creating a new class in `cubicoder.init` named `ModBlocks`. This will be exactly like the `ModItems` class, except for blocks.
+Begin by creating a new class in `cubicoder.tutorialmod.init` named `ModBlocks`. This will be exactly like the `ModItems` class, except for blocks.
 
 ```java
 package cubicoder.tutorialmod.init;
