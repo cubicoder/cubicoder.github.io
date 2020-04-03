@@ -39,7 +39,7 @@ There are a few things to note here. First, we see the `type` tag, defining the 
 
 Next is the `pattern` tag, which defines the pattern in the crafting grid. Note that the recipe itself only takes up a 1 x 2 area, and so it is defined as such. The recipe will work in any place in the crafting grid, as long as it has the same shape.
 
-After that, each item/block is represented by a character, which is defined in the `key` section. This should be pretty self-explanatory; the `item` tag corresponds to the registry name of an item or a block. Also, you can define metadata afterwards using the `data` tag. The torch uses this to allow coal or charcoal to be used, as charcoal is the same item as coal with different metadata. Also note how this recipe maps two items to one character, so they can be used interchangeably. The wildcard data value `32767` could also have been used.
+After that, each item/block is represented by a character, which is defined in the `key` section. This should be pretty self-explanatory; the `item` tag corresponds to the registry name of an item or a block. Also, you can define metadata afterwards using the `data` tag. The torch uses this to allow coal or charcoal to be used, as charcoal is the same item as coal, but with different metadata. Also note how this recipe maps two items to one character, so they can be used interchangeably.
 
 Finally, in the `result` tag, we find the item resulting from this recipe, as well as the count (optional). The `data` tag can also be used here.
 

@@ -40,7 +40,7 @@ public static final ArmorMaterial TUTORIAL_ARMOR = EnumHelper.addArmorMaterial(T
 ```
 Now do your usual stuff for adding an item: reference in `ModItems`, register in `RegistrationHandler` (making sure to set the correct armor material and `EntityEquipmentSlot`), register models in `ModelRegistryHandler`, add JSON models in `assets/tutorialmod/models/item`, add textures for the items in `assets/tutorialmod/textures/items`, and adding lang file translations.
 
-You’ll also need two textures in `assets/tutorialmod/textures/models/armor`, one for each armor layer. These should be called `tutorial_layer_x.png`, where x is the layer number - 2 for leggings, and 1 for the other armor pieces. Take a look at [the source for this tutorial](https://github.com/cubicoder/cubicoder.github.io) to see what these layer textures to look like, and if you need help with registering the items.
+You’ll also need two textures in `assets/tutorialmod/textures/models/armor`, one for each armor layer. These should be called `tutorial_layer_x.png`, where x is the layer number - 2 for leggings, and 1 for the other armor pieces. Take a look at [the source for this tutorial](https://github.com/cubicoder/cubicoder.github.io) to see what these layer textures should look like, and if you need help with registering the items.
 
 If you registered your items properly and followed this tutorial correctly, you will see your armor in your creative tab! Enjoy!
 ![armor0](/img/9armor/armor0.png)
