@@ -38,12 +38,12 @@ run
 ```
 Each line specifies a directory or file to ignore. The lines with `#` characters in front are comments.
 
-Next, we need to edit the build.gradle file. This file is responsible for giving various instructions on actually building the JAR file. We need to edit three values: version, group, and archivesBaseName. (Hopefully, these are pretty self-explanatory.) This process can be automated in 1.12.2, and will be fully automated in 1.13.
+Next, we need to edit the `build.gradle` file. This file is responsible for giving various instructions on actually building the JAR file. We need to edit three values: `version`, `group`, and `archivesBaseName`. The version should be prepended by the Minecraft version. Then, use a dash, followed by the version you specified in your main mod class. The group should be what you named your main package. `archivesBaseName` is your modid.
 ```groovy
-version = "1.12.2-1.0"
-group = "com.cubicoder.tutorialmod"
-archivesBaseName = "TutorialMod"
+version = "1.12.2-0.1.0"
+group = "cubicoder.tutorialmod"
+archivesBaseName = "tutorialmod"
 ```
-Finally open a command prompt in the root directory of the project (TutorialMod for me) and run the command `gradlew build` (`./gradlew build` if you're not on Windows). Your mod JAR will be in the directory `/build/libs/`.
+Then, you can open the Gradle Tasks pane in Eclipse and run the `build` task. Your mod JAR will be in the directory `/build/libs/`.
 ![export1](/img/12export/export1.png)
-Happy playing! You can now publish your mod on CurseForge if you think the world is ready for it.
+Happy playing!
