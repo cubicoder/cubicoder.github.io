@@ -28,7 +28,6 @@ Next, we need to actually register our items. Create a class in `cubicoder.tutor
 ```java
 package cubicoder.tutorialmod;
 
-import cubicoder.tutorialmod.util.RegistryUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -57,7 +56,9 @@ The registry name is the name under which the item is registered into the Forge 
 
 The mod id is added to the translation key to protect against namespace collisions. For example, two different mods might both add a copper ingot and set its translation key to `copper_ingot`. Without adding the mod id, the different items appear to be one. The mod id is also added to the registry name in the `setRegistryName()` method.
 
-To name the items, you could also create a static utility method somewhere that takes in an `Item` and a `String` and calls the two naming methods (`setRegistryName()` and `setTranslationKey()`) on the `Item`. The method should return the `Item`. Your call would then look like this:
+One easy way to create and name `Item`s all in one go is to create a utility method. This method would take in the `Item` and a `String`, and it would return the `Item` after setting its registry name and translation key to the inputted `String`. See if you can figure this out on your own, but if you need help, check the [source on GitHub](https://github.com/cubicoder/tutorialmod/blob/1.12.2/src/main/java/cubicoder/tutorialmod/util/RegistryUtil.java).
+
+I've done this for my project in a class called `RegistryUtil`, located in `cubicoder.tutorialmod.util`. I'll be using this for the remaining tutorials, like so:
 
 ```java
 //...

@@ -4,8 +4,6 @@ title: Ore Generation
 date: 2018-07-17
 ---
 
-## Ore Generation
-
 Let’s add some world generation into our mod that makes it so our tutorial block generates in the world. The first step to this is to create the class `TutorialWorldGen` in the package `cubicoder.tutorialmod.world.gen`. This class will implement `IWorldGenerator`. After you add the unimplemented method, create a constructor for the class and another, private method named `genStandard()`.
 ```java
 package cubicoder.tutorialmod.world.gen;
